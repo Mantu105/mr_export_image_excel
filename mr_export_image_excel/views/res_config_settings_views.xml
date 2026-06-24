@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_mr_export_image_excel" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.mr.export.image.excel</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='user_default_rights']" position="inside">
+                <setting id="mr_export_image_excel_setting"
+                         string="Export Image in Excel"
+                         help="Embed images directly in exported Excel (XLSX) files instead of base64 text.">
+                    <field name="export_image_in_excel"/>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

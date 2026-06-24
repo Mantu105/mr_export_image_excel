@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body style="margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:#2b2b2b;background:#fff;">
+
+<!-- ===== HERO BANNER ===== -->
+<section style="background:linear-gradient(135deg,#1a6645 0%,#2e9e6b 100%);padding:48px 40px;text-align:center;">
+    <h1 style="margin:0 0 12px;font-size:36px;font-weight:700;color:#fff;letter-spacing:-0.5px;">
+        Export Image in Excel
+    </h1>
+    <p style="margin:0;font-size:18px;color:#d4f0e4;max-width:640px;display:inline-block;line-height:1.5;">
+        Embed real images in your XLSX exports — no more base64 text clutter.
+    </p>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section style="max-width:900px;margin:40px auto;padding:0 24px;">
+    <p style="font-size:16px;line-height:1.7;margin:0;">
+        The standard Odoo export writes binary / image field values as raw base64 strings,
+        making the Excel file unreadable for end-users. <strong>Export Image in Excel</strong>
+        intercepts the XLSX generation and embeds every image column as a proper, thumbnail-sized
+        picture directly inside the cell — exactly as you would expect it to look.
+    </p>
+</section>
+
+<!-- ===== DIVIDER ===== -->
+<hr style="border:none;border-top:1px solid #e0e0e0;max-width:900px;margin:0 auto;"/>
+
+<!-- ===== KEY FEATURES ===== -->
+<section style="max-width:900px;margin:40px auto;padding:0 24px;">
+    <h2 style="font-size:22px;color:#1a6645;margin:0 0 24px;">Key Features</h2>
+    <table style="width:100%;border-collapse:collapse;">
+        <tr>
+            <td style="width:50%;padding:0 16px 20px 0;vertical-align:top;">
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <span style="font-size:28px;line-height:1;">🖼️</span>
+                    <div>
+                        <strong style="font-size:15px;display:block;margin-bottom:4px;">Real Images in Excel</strong>
+                        <span style="font-size:14px;color:#555;line-height:1.5;">
+                            Binary / Image columns are rendered as embedded thumbnails
+                            instead of unreadable base64 strings.
+                        </span>
+                    </div>
+                </div>
+            </td>
+            <td style="width:50%;padding:0 0 20px 16px;vertical-align:top;">
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <span style="font-size:28px;line-height:1;">⚙️</span>
+                    <div>
+                        <strong style="font-size:15px;display:block;margin-bottom:4px;">One-Click Toggle</strong>
+                        <span style="font-size:14px;color:#555;line-height:1.5;">
+                            Enable or disable the feature from
+                            <em>Settings → General Settings → Permissions</em>
+                            without touching any code.
+                        </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:0 16px 20px 0;vertical-align:top;">
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <span style="font-size:28px;line-height:1;">🔌</span>
+                    <div>
+                        <strong style="font-size:15px;display:block;margin-bottom:4px;">Works with Any Model</strong>
+                        <span style="font-size:14px;color:#555;line-height:1.5;">
+                            Products, Contacts, Employees, or any custom model
+                            with a binary / image field — all supported out of the box.
+                        </span>
+                    </div>
+                </div>
+            </td>
+            <td style="padding:0 0 20px 16px;vertical-align:top;">
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <span style="font-size:28px;line-height:1;">📦</span>
+                    <div>
+                        <strong style="font-size:15px;display:block;margin-bottom:4px;">No Extra Library Needed</strong>
+                        <span style="font-size:14px;color:#555;line-height:1.5;">
+                            Uses only <strong>xlsxwriter</strong> (already bundled with Odoo)
+                            and Odoo's own image tools. Zero additional dependencies.
+                        </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding:0 16px 0 0;vertical-align:top;">
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <span style="font-size:28px;line-height:1;">🔒</span>
+                    <div>
+                        <strong style="font-size:15px;display:block;margin-bottom:4px;">Non-Image Columns Unaffected</strong>
+                        <span style="font-size:14px;color:#555;line-height:1.5;">
+                            All other column types (text, numbers, dates) are exported
+                            exactly as standard Odoo would — nothing breaks.
+                        </span>
+                    </div>
+                </div>
+            </td>
+            <td style="padding:0 0 0 16px;vertical-align:top;">
+                <div style="display:flex;align-items:flex-start;gap:12px;">
+                    <span style="font-size:28px;line-height:1;">🎯</span>
+                    <div>
+                        <strong style="font-size:15px;display:block;margin-bottom:4px;">Auto-Sized Rows &amp; Columns</strong>
+                        <span style="font-size:14px;color:#555;line-height:1.5;">
+                            Image columns are automatically widened and rows are
+                            automatically heightened to neatly display the thumbnail.
+                        </span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<!-- ===== DIVIDER ===== -->
+<hr style="border:none;border-top:1px solid #e0e0e0;max-width:900px;margin:0 auto;"/>
+
+<!-- ===== HOW TO USE ===== -->
+<!--
+    SCREENSHOTS: Place your screenshot files in  static/description/
+    using these exact filenames:
+        step1_settings.png   – Settings page with the toggle highlighted
+        step2_records.png    – List view with records selected + Action menu open
+        step3_dialog.png     – Export dialog with image field added + XLSX chosen
+        step4_result.png     – Final Excel file showing embedded images in cells
+-->
+<section style="max-width:900px;margin:40px auto;padding:0 24px;">
+    <h2 style="font-size:22px;color:#1a6645;margin:0 0 32px;">How to Use</h2>
+
+    <!-- STEP 1 -->
+    <div style="margin-bottom:48px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;
+                         width:32px;height:32px;border-radius:50%;
+                         background:#1a6645;color:#fff;font-size:15px;font-weight:700;
+                         flex-shrink:0;">1</span>
+            <strong style="font-size:17px;">Enable the Setting</strong>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.7;margin:0 0 16px 46px;">
+            Go to <em>Settings → General Settings → Permissions</em> and turn on
+            <strong>Export Image in Excel</strong>, then click <em>Save</em>.
+        </p>
+        <div style="margin-left:46px;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+            <img src="step1_settings.png"
+                 alt="Settings – Export Image in Excel toggle"
+                 style="width:100%;display:block;"/>
+        </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div style="margin-bottom:48px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;
+                         width:32px;height:32px;border-radius:50%;
+                         background:#1a6645;color:#fff;font-size:15px;font-weight:700;
+                         flex-shrink:0;">2</span>
+            <strong style="font-size:17px;">Select Your Records</strong>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.7;margin:0 0 16px 46px;">
+            Open any list view (e.g. <em>Products</em>, <em>Contacts</em>, <em>Employees</em>),
+            select one or more records and click <em>Action → Export</em>.
+        </p>
+        <div style="margin-left:46px;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+            <img src="step2_records.png"
+                 alt="List view – select records and open Action → Export"
+                 style="width:100%;display:block;"/>
+        </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div style="margin-bottom:48px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;
+                         width:32px;height:32px;border-radius:50%;
+                         background:#1a6645;color:#fff;font-size:15px;font-weight:700;
+                         flex-shrink:0;">3</span>
+            <strong style="font-size:17px;">Add the Image Column</strong>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.7;margin:0 0 16px 46px;">
+            In the export dialog, add any image or binary field
+            (e.g. <em>Image</em>, <em>Image 128</em>, <em>Photo</em>) to the
+            export list and choose <strong>XLSX</strong> as the format, then click
+            <em>Export</em>.
+        </p>
+        <div style="margin-left:46px;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+            <img src="step3_dialog.png"
+                 alt="Export dialog – image field added, XLSX format selected"
+                 style="width:100%;display:block;"/>
+        </div>
+    </div>
+
+    <!-- STEP 4 -->
+    <div style="margin-bottom:8px;">
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:12px;">
+            <span style="display:inline-flex;align-items:center;justify-content:center;
+                         width:32px;height:32px;border-radius:50%;
+                         background:#1a6645;color:#fff;font-size:15px;font-weight:700;
+                         flex-shrink:0;">4</span>
+            <strong style="font-size:17px;">Open in Excel</strong>
+        </div>
+        <p style="font-size:14px;color:#555;line-height:1.7;margin:0 0 16px 46px;">
+            The downloaded file contains real embedded thumbnail images in the
+            corresponding cells — ready to share with customers or colleagues.
+        </p>
+        <div style="margin-left:46px;border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;">
+            <img src="step4_result.png"
+                 alt="Excel result – images embedded directly in cells"
+                 style="width:100%;display:block;"/>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONNECT WITH DEVELOPER ===== -->
+<section style="max-width:900px;margin:40px auto;padding:0 24px;">
+    <h2 style="font-size:22px;color:#1a6645;margin:0 0 20px;">Connect with the Developer</h2>
+    <div style="background:#f9f9f9;border:1px solid #e0e0e0;border-radius:8px;padding:28px 32px;display:flex;align-items:center;gap:28px;">
+        <!-- Avatar -->
+        <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:#1a6645;display:flex;align-items:center;justify-content:center;">
+            <span style="font-size:28px;color:#fff;font-weight:700;line-height:1;">M</span>
+        </div>
+        <!-- Info -->
+        <div>
+            <p style="margin:0 0 4px;font-size:18px;font-weight:700;color:#2b2b2b;">Mantu Raj</p>
+            <p style="margin:0 0 10px;font-size:13px;color:#888;letter-spacing:0.3px;">Odoo Developer</p>
+            <p style="margin:0;font-size:14px;color:#555;">
+                <span style="margin-right:6px;">✉️</span>
+                <a href="mailto:workmantu105@gmail.com"
+                   style="color:#1a6645;text-decoration:none;font-weight:600;">
+                    workmantu105@gmail.com
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<section style="background:#f5f5f5;padding:20px 24px;text-align:center;margin-top:40px;">
+    <p style="margin:0;font-size:13px;color:#aaa;">Built with ❤️ for the Odoo Community</p>
+</section>
+
+</body>
+</html>
