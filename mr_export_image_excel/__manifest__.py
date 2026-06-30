@@ -31,7 +31,7 @@ Key Features
 * Works with any model that has an image/binary field.
 * Easy to use, no extra Python library required.
 """,
-    'author': 'MR',
+    'author': 'Mantu Raj',
     'website': '',
     'license': 'LGPL-3',
     'depends': [
